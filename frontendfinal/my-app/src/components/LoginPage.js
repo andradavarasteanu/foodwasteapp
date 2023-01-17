@@ -16,7 +16,7 @@ export default function Login(){
         .then(res=>{
           if(res.data.validation){
             alert('Your password is correct')
-            nav(`/2`);
+            nav(`/1`);
           }else{
             alert('Your password or email is not correct')
           }

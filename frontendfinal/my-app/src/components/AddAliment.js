@@ -11,7 +11,7 @@ function AddAliment (props) {
 
   const [aliment, setAliment] = useState({
     nume: "",
-    categorie: "",
+    categorie: "LACTAT",
     dataExpirare: ""
   });
  

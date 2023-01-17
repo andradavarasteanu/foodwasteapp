@@ -29,8 +29,9 @@ export default function Friends() {
     useEffect(() => {
         getUsers()
       }, [])
-
-      const filteredUsers=users.filter(user => user.id!=={id});
+      const userId=parseInt(id);
+      const filteredUsers=users.filter(user => user.id!==userId);
+     
     return (
 <section className="friends-list">
                 <div className='container'>
@@ -43,7 +44,7 @@ export default function Friends() {
                             <div className='card-body'>
                                 <div className='row align-items-center d-flex justify-content-around'>
                                 <div className='col-md-4'>
-                                    <img src={`https://randomuser.me/api/portraits/thumb/men/${user.id}.jpg`} alt="" className='img-fluid contact-img'></img>
+                                    <img src={`https://api.dicebear.com/5.x/adventurer/svg?seed=Oliver${user.id}.jpg`} alt="" className='img-fluid contact-img'></img>
                                 </div>
                                 <div className='col-md-7'>
                                     <ul className='list-group'>
