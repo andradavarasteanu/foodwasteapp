@@ -9,7 +9,7 @@ function HomeSection() {
   return (
     <div className='home-container'>
       <img src='food3.jpg'/>
-      <h1>WELOCOME TO THE FOOD WASTE APP</h1>
+      <h1>WELCOME TO THE FOOD WASTE APP</h1>
       <p>Get started!</p>
       <div className='home-btns'>
       <Link className="btns btn--outline btn--large" to="/LoginPage">LOGIN TO YOUR ACCOUNT</Link>
