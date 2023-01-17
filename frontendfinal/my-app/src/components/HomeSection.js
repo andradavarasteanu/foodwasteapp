@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './HomeSection.css';
+import { useState } from 'react';
 
 function HomeSection() {
   const {id}=useParams();
+  
   return (
     <div className='home-container'>
       <img src='food3.jpg'/>

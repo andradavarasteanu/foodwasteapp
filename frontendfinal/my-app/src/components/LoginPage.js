@@ -9,18 +9,20 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Login(){
   const nav=useNavigate();
+ 
     const onFinish = values =>{
         const{email, password} = values
         axios.post(`http://localhost:3001/api/validatePassword`,{email,password})
         .then(res=>{
           if(res.data.validation){
             alert('Your password is correct')
-            nav(`/1`);
+            nav(`/2`);
           }else{
             alert('Your password or email is not correct')
           }
         })
     }
+    
   return (
     <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
     

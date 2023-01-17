@@ -30,12 +30,13 @@ export default function Friends() {
         getUsers()
       }, [])
 
+      const filteredUsers=users.filter(user => user.id!=={id});
     return (
 <section className="friends-list">
                 <div className='container'>
                     <div className='row'>
                         {
-                            users.length>0 && users.map(user =>{
+                            users.length>0 && filteredUsers.map(user =>{
                                 return(
                                 <div className='col-md-6' key={user.id}>
                         <div className='card my-2'>

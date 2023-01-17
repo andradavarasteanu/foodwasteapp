@@ -1,10 +1,11 @@
 import './navbar.css';
 import { Link, useMatch,useResolvedPath} from 'react-router-dom';
-import { useImperativeHandle } from 'react';
+import { useImperativeHandle, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function NavBar(){
     const {id}=useParams();
+    const [userId]=useState(null);
     return <nav className="nav">
     <Link to="/1" className="site-title">Food Waste App</Link>
     <ul>
